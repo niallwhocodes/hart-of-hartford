@@ -255,7 +255,7 @@ h3 {
     align-items: center;
 }
 
-#buttons button {
+button {
     margin: 1vw 3vw 3vw 3vw;
     padding: 1vw 1.5vw;
     font-size: 1.75vw;
@@ -265,7 +265,7 @@ h3 {
     cursor: pointer;
 }
 
-#buttons button:hover {
+button:hover {
     background-color: rgb(146, 133, 130);
     transition: all 0.3s ease(downhill);
     transform: scale(1.2);
