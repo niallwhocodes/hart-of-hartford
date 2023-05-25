@@ -1,0 +1,350 @@
+/* font-family: 'Alegreya', serif;
+font-family: 'Cormorant', serif;
+font-family: 'Work Sans', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: rgb(146, 133, 130);
+}
+
+.hero-container {
+    background: linear-gradient(rgba(57, 57, 57, 0.7), rgba(57, 57, 57, 0.7)), url('/images/background-image.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: 7vw;
+}
+
+.logo-img {
+    height: 7vw;
+    width: 14vw;
+}
+
+nav {
+    width: 100%;
+    padding: 0 3%;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4vw;
+}
+
+/* .nav-list a:hover {
+    color: black;
+} */
+
+.nav-items {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.95);
+    padding: 0.75rem 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 7vw;
+    padding: 14vw 19vw 0 19vw;
+    font-family: 'Cormorant', serif;
+}
+
+.hero-info {
+    padding: 0 0 0 19.359%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2vw;
+}
+
+.socials-all {
+    display: flex;
+    position: absolute;
+    left: 75vw;
+    transform: translate(-50%, -50%);
+}
+
+.socials-item {
+    list-style: none;
+}
+
+.socials-item a {
+    width: 3vw;
+    height: 3vw;
+    background-color: #fff;
+    text-align: center;
+    line-height: 3vw;
+    font-size: 1.5vw;
+    margin: 0 0.50vw;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 0.2vw solid #fff;
+    z-index: 1;
+}
+
+.socials-item a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+.socials-item a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.socials-item a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+.socials-item a:hover:before {
+    top: 0;
+}
+
+.socials-item:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+.socials-item:nth-child(2) a:before {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.hero-description {
+    margin: 6vw 3vw;
+    padding-left: 2vw;
+    text-decoration: none;
+    list-style-type: none;
+    border-left: 0.8px solid rgba(255, 255, 255, 0.70);
+    font-size: 1.25vw;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: 'Cormorant', serif;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gallery-container {
+    padding: 7rem;
+    background-color: #A69894;
+}
+
+#gallery-heading {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery-heading h2 {
+    font-size: 6vw;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: white;
+    opacity: 0.7;
+    outline: none;
+    text-align: center;
+}
+
+.gallery-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-info p {
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: white;
+    opacity: 0.7;
+    outline: none;
+    text-align: center;
+}
+
+#gallery-heading h2:hover,
+.gallery-info p:hover,
+.menu-container h2:hover,
+#booking-title h2:hover {
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-images {
+    margin: 5rem;
+    display: grid;
+    grid-template-rows: repeat(2, 30vh);
+    grid-template-columns: repeat(5, 17vw);
+    transition: all 0.3s ease(gravity);
+    background-color: rgb(146, 133, 130);
+    border-radius: 10px;
+    padding: 0.25em;
+}
+
+.gallery-images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.15s ease(downhill);
+    position: relative;
+    box-shadow: 0 0 2 0;
+    opacity: 0.67;
+    filter: sepia(9%) hue-rotate(327deg) brightness(95%) contrast(86%);
+}
+
+.gallery-images img:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.gallery-images img:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.gallery-images img:hover {
+    opacity: 1;
+    z-index: 1;
+    transition: all 0.3s ease(downhill);
+    filter: sepia(0%) hue-rotate(0deg);
+    border-radius: 5px;
+}
+
+.gallery-info {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons button {
+    margin: 1vw 3vw;
+    padding: 1vw 1.5vw;
+    background-color: #A69894;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    background-color: rgb(146, 133, 130);
+    transition: all 0.3s ease(downhill);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.menu-container {
+    text-align: center;
+    margin: 3vw;
+}
+
+.menu-container p {
+    margin-bottom: 3vw;
+}
+
+#menu-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0 8vw 0;
+}
+
+#menu-selection a {
+    display: flex;
+    border-top: white solid 0.05vw;
+    border-bottom: white solid 0.05vw;
+    width: 30vw;
+    height: 4vw;
+    margin: 0 1vw;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25vw;
+    text-transform: lowercase;
+}
+
+.menu-container h2, #booking-title h2 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: white;
+    opacity: 0.7;
+    outline: none;
+    text-align: center;
+}
+
+.menu-container p, #booking-title p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#menu-selection a:hover {
+    background-color: white;
+    opacity: 0.7;
+    color: #A69894;
+    transform: scale(1.1);
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+
+#booking-container {
+    width: 100%;
+    height: 100%;
+    margin: 10vw auto auto auto;
+    position: relative;
+}
+
+#booking-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#booking-title {
+    padding-top: 3vw;
+    text-align: center;
+}
