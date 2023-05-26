@@ -381,3 +381,23 @@ button:hover {
     padding-top: 3vw;
     text-align: center;
 }
+
+.animation {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.4s ease-out;
+    transition-delay: 0.4s;
+    filter: blur(5px);
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+@media(prefers-reduced-motion) {
+    .animation {
+        transition: none;
+    }
+}
